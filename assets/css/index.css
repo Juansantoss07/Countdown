@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.box{
+    height: 70vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70%;
+}
+div.content1 h1{
+    color: var(--purple);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+div.box-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--text-color);
+}
+div.box-time2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.box-time2 p{
+    color: var(--black);
+    font-size: 60;
+}
+div.subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12;
+    height: 20%;
+}
+div.subscribe button{
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 40%;
+    padding: 0.5rem 0;
+    color: white;
+    background-color: var(--purple);
+    font-weight: 600;
+}
+
+@media (max-width:1190px){
+    div.box{
+        flex-direction: column;
+        height: 150vh;
+    }
+    div.top{
+        display: none;
+    }
+    div.content1{
+        height: 100vh;
+    }
+    div.content2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width:630px){
+    div.content2 img{
+        height: 50%;
+    }
+}
+@media (max-width:419px){
+    div.content1{
+        align-items: center;
+        text-align: center;
+    }
+    div.content1 h1{
+        font-size: 20;
+    }
+    div.box-time2 p{
+        font-size: 30;
+    }
+    div.box-time p{
+        width: 75px;
+    }
+    div.content2 img{
+        height: 40%;
+    }
+}
